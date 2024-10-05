@@ -4,7 +4,7 @@
 // custom css
 
 $font-family-sans-serif: "Raleway", sans-serif;
-
+// nav section 1st
 body a {
   cursor: pointer;
 }
@@ -28,9 +28,9 @@ body a {
   display: none;
 }
 .custom-dropdown:hover ul {
+  min-width: 100px;
   display: block;
   position: absolute;
-  min-width: 100px;
   z-index: 100;
   background-color: #fff;
   padding: 1rem;
@@ -39,5 +39,14 @@ body a {
 .custom-dropdown ul li {
   cursor: pointer;
 }
+
+// second nav section
+
+.arrow-icon {
+  font-size: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+
 // bootstrap node modules
 @import "../node_modules/bootstrap/scss/bootstrap";
