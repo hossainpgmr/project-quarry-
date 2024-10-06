@@ -1,51 +1,57 @@
 // font family include
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
-// custom css
-
+@import "navbar";
 $font-family-sans-serif: "Raleway", sans-serif;
+
 // nav section 1st
-body a {
+body {
+  // height: 100vh;
+  // width: 100%;
+  background: #fff !important;
+}
+body a,
+.fa-solid,
+.fa-regular {
   cursor: pointer;
 }
-.nav-hr hr {
-  margin: 0%;
-  color: #807e7e;
+
+// carousel section
+#main-carousel .carousel-inner {
+  height: 550px;
 }
-.nav-icon {
-  color: #807e7e;
-  font-size: 1.2rem;
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
 }
-.single-bar {
-  background-color: #b7b2b272;
-  width: 1px;
-  height: 0.7rem;
+.carousel-control-prev {
+  left: -15rem !important;
 }
-.custom-dropdown {
-  position: relative;
+.carousel-control-next {
+  right: -15rem !important;
 }
-.custom-dropdown ul {
-  display: none;
-}
-.custom-dropdown:hover ul {
-  min-width: 100px;
-  display: block;
-  position: absolute;
-  z-index: 100;
+.carousel-content {
+  width: 100% !important;
+  height: 100% !important;
   background-color: #fff;
-  padding: 1rem;
-  box-shadow: #959da540 0px 1px 5px;
-}
-.custom-dropdown ul li {
-  cursor: pointer;
-}
-
-// second nav section
-
-.arrow-icon {
-  font-size: 0.5rem;
-  text-align: center;
+  display: flex !important;
   align-items: center;
+}
+.carousel-content .text {
+  letter-spacing: 4px !important;
+  & h3 {
+    color: #0000009a;
+  }
+}
+
+.text,
+.pic {
+  flex: 1; /* Make both the text and image take equal space */
+}
+.carousel-content .pic img {
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
 }
 
 // bootstrap node modules

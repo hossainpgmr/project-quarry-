@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-body a {
-  cursor: pointer;
-}
-
 .nav-hr hr {
   margin: 0%;
   color: #807e7e;
@@ -33,9 +29,10 @@ body a {
   display: block;
   position: absolute;
   z-index: 100;
-  background-color: #fff;
+  background-color: #f4f1f1;
   padding: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2509803922) 0px 1px 5px;
+  border-radius: 2px;
 }
 
 .custom-dropdown ul li {
@@ -46,6 +43,59 @@ body a {
   font-size: 0.5rem;
   text-align: center;
   align-items: center;
+}
+
+body {
+  background: #fff !important;
+}
+
+body a,
+.fa-solid,
+.fa-regular {
+  cursor: pointer;
+}
+
+#main-carousel .carousel-inner {
+  height: 550px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+}
+
+.carousel-control-prev {
+  left: -15rem !important;
+}
+
+.carousel-control-next {
+  right: -15rem !important;
+}
+
+.carousel-content {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #fff;
+  display: flex !important;
+  align-items: center;
+}
+
+.carousel-content .text {
+  letter-spacing: 4px !important;
+}
+.carousel-content .text h3, .carousel-content .text .h3 {
+  color: rgba(0, 0, 0, 0.6039215686);
+}
+
+.text,
+.pic {
+  flex: 1; /* Make both the text and image take equal space */
+}
+
+.carousel-content .pic img {
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
 }
 
 /*!

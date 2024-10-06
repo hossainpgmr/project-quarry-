@@ -1,0 +1,40 @@
+.nav-hr hr {
+  margin: 0%;
+  color: #807e7e;
+}
+.nav-icon {
+  color: #807e7e;
+  font-size: 1.2rem;
+}
+.single-bar {
+  background-color: #b7b2b272;
+  width: 1px;
+  height: 0.7rem;
+}
+.custom-dropdown {
+  position: relative;
+}
+.custom-dropdown ul {
+  display: none;
+}
+.custom-dropdown:hover ul {
+  min-width: 100px;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  background-color: #f4f1f1;
+  padding: 1rem;
+  box-shadow: #959da540 0px 1px 5px;
+  border-radius: 2px;
+}
+.custom-dropdown ul li {
+  cursor: pointer;
+}
+
+// second nav section
+
+.arrow-icon {
+  font-size: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
