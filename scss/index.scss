@@ -1,6 +1,8 @@
 // font family include
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "navbar";
+@import "feature";
 $font-family-sans-serif: "Raleway", sans-serif;
 
 // nav section 1st
@@ -39,7 +41,7 @@ body a,
 }
 .carousel-content .text {
   letter-spacing: 4px !important;
-  & h3 {
+  h3 {
     color: #0000009a;
   }
 }

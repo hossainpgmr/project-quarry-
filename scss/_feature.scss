@@ -1,0 +1,51 @@
+.feature-card {
+  width: 420px;
+  height: 250px;
+  position: relative;
+  border: solid 5px #dddddde6;
+  margin: 7rem 0;
+  border-radius: 3px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .card-text {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    font-family: "Playfair Display", serif;
+
+    h3 {
+      color: #508407;
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 18px;
+      color: #32380d;
+      margin-bottom: 50px;
+      span {
+        font-size: 16px;
+        color: #66873f;
+        margin-left: 5px;
+      }
+    }
+    .card-icon {
+      padding: 3px;
+      width: 22px;
+      height: 22px;
+      display: flex; /* Use flexbox to align the child icon */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      font-size: 16px;
+      color: #6eb110;
+      border: #508407 1px solid;
+      border-radius: 100%;
+    }
+  }
+}
