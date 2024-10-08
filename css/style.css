@@ -47,8 +47,6 @@
 }
 
 .feature-card {
-  width: 420px;
-  height: 250px;
   position: relative;
   border: solid 5px rgba(221, 221, 221, 0.9019607843);
   margin: 7rem 0;
@@ -85,16 +83,62 @@
   margin-left: 5px;
 }
 .feature-card .card-text .card-icon {
-  padding: 3px;
-  width: 22px;
-  height: 22px;
-  display: flex; /* Use flexbox to align the child icon */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  padding: 2.5px;
+  width: 24px;
+  height: 24px;
   font-size: 16px;
   color: #6eb110;
   border: #508407 1px solid;
-  border-radius: 100%;
+  border-radius: 50%;
+  display: flex; /* Use flexbox to align the child icon */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.daily-deals-title h2, .daily-deals-title .h2 {
+  display: inline-block;
+  text-decoration: none;
+  color: #3e3f3f;
+  font-weight: 600;
+  line-height: 36px;
+  font-size: 34px;
+  position: relative;
+}
+.daily-deals-title h2::before, .daily-deals-title .h2::before, .daily-deals-title h2::after, .daily-deals-title .h2::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  width: 62px;
+  height: 3px;
+  background-color: #3e3f3f;
+}
+.daily-deals-title h2::before, .daily-deals-title .h2::before {
+  left: -100px;
+}
+.daily-deals-title h2::after, .daily-deals-title .h2::after {
+  right: -100px;
+}
+
+.tab-list {
+  justify-content: center;
+  padding-top: 42px;
+  padding-bottom: 52px;
+}
+.tab-list .nav-link {
+  background-color: transparent !important;
+  padding: 8px 16px;
+  margin: 0 16px;
+  display: block;
+}
+.tab-list a.active h4, .tab-list a.active .h4,
+.tab-list a h4:hover,
+.tab-list a .h4:hover {
+  color: #111;
+  transition: all 0.2s ease 0s;
+}
+.tab-list h4, .tab-list .h4 {
+  color: rgba(85, 85, 85, 0.7450980392);
+  font-size: 16px;
 }
 
 body {
