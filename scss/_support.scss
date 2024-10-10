@@ -1,0 +1,43 @@
+.supporting-card {
+  position: relative;
+  margin: 7rem 0;
+  padding: 3rem;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #dddddd1d;
+
+  .animate {
+    font-size: 36px;
+    margin: 18px 0;
+    transition: all 0.2s ease-in-out 0.2s;
+
+    &:hover i {
+      animation: button 0.2s linear; /* reference the keyframes */
+    }
+  }
+
+  h3 {
+    color: #636262;
+    margin: 1rem 0;
+    font-size: 18px;
+  }
+
+  h5 {
+    color: #63626290;
+    font-size: 18px;
+    word-spacing: 3px;
+  }
+}
+
+/* Move the keyframes outside of the hover state */
+@keyframes button {
+  0% {
+    rotate: 20deg;
+  }
+  50% {
+    rotate: -20deg;
+  }
+  100% {
+    rotate: 20deg;
+  }
+}

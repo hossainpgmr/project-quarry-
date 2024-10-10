@@ -283,6 +283,45 @@
   text-decoration: line-through;
 }
 
+.supporting-card {
+  position: relative;
+  margin: 7rem 0;
+  padding: 3rem;
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(221, 221, 221, 0.1137254902);
+}
+.supporting-card .animate {
+  font-size: 36px;
+  margin: 18px 0;
+  transition: all 0.2s ease-in-out 0.2s;
+}
+.supporting-card .animate:hover i {
+  animation: button 0.2s linear; /* reference the keyframes */
+}
+.supporting-card h3, .supporting-card .h3 {
+  color: #636262;
+  margin: 1rem 0;
+  font-size: 18px;
+}
+.supporting-card h5, .supporting-card .h5 {
+  color: rgba(99, 98, 98, 0.5647058824);
+  font-size: 18px;
+  word-spacing: 3px;
+}
+
+/* Move the keyframes outside of the hover state */
+@keyframes button {
+  0% {
+    rotate: 20deg;
+  }
+  50% {
+    rotate: -20deg;
+  }
+  100% {
+    rotate: 20deg;
+  }
+}
 body {
   background: #fff !important;
 }
