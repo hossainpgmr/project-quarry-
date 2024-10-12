@@ -41,6 +41,9 @@
       outline: none;
       box-shadow: none;
       cursor: pointer;
+      &:hover{
+        color: #111;
+      }
     }
   }
 }
