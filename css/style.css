@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 .nav-hr hr {
   margin: 0%;
   color: #807e7e;
@@ -348,9 +349,11 @@
   padding: 5px; /* Adjust padding */
   width: 100%;
   height: 45px;
-  color: rgba(51, 51, 51, 0.5529411765);
+  color: #333333;
 }
 .subscription-section .subscribe-form .button {
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 16px;
   right: 0;
@@ -362,6 +365,106 @@
   cursor: pointer;
 }
 .subscription-section .subscribe-form .button:hover i {
+  color: #111;
+}
+
+.footer-section {
+  background: rgba(221, 221, 221, 0.1137254902);
+  margin-top: 100px;
+  padding: 4rem 0;
+  position: relative;
+}
+.footer-section .up-icon {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #80b45e;
+  bottom: 75px;
+  right: 45px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+.footer-section .up-icon i {
+  color: #fff;
+}
+.footer-section .copyright .copy-symbol,
+.footer-section .copyright .copy-symbol p span a {
+  font-size: 14px;
+  line-height: inherit;
+  font-weight: 400;
+  color: #333;
+  margin-top: 5px;
+  font-family: "Exo 2";
+  text-decoration: none;
+}
+.footer-section .copyright .copy-symbol p,
+.footer-section .copyright .copy-symbol p span a p {
+  word-spacing: 2px;
+  margin-bottom: 10px !important;
+}
+.footer-section .copyright .para-txt {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.footer-section .footer-link-item h3, .footer-section .footer-link-item .h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+}
+.footer-section .footer-link-item .footer-link .para-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.footer-section .footer-link-item .footer-link ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section .footer-link-item .footer-link ul a {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  line-height: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-section .subscribe-form {
+  position: relative;
+  text-align: center; /* Optional, if you want center-aligned content */
+}
+.footer-section .subscribe-form .email {
+  border: 0;
+  outline: none;
+  background: transparent;
+  border-bottom: #cfcccc solid 1px;
+  padding: 5px; /* Adjust padding */
+  width: 100%;
+  height: 45px;
+  color: #333333;
+}
+.footer-section .subscribe-form .button i {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  background: none;
+  color: #767373;
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-section .subscribe-form .button i:hover a {
   color: #111;
 }
 
